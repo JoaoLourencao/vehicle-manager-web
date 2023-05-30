@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: #060739;
+  --secondary: #734AFE;
+}
+
+.ant-btn-default:not(:disabled):active {
+  color: white;
+  border-color: transparent;
+}
+
+.ant-btn-default:not(:disabled):hover {
+  color: white;
+  border-color: transparent;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: var(--secondary);
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):focus {
+  border-color: var(--secondary);
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):active {
+  border-color: var(--secondary);
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):visited {
+  border-color: var(--secondary);
+}
+
+.ant-layout .ant-layout-sider {
+  background-color: var(--primary);
+}
+
+.ant-menu-dark {
+  background: var(--secondary);
+  color: white;
+}
+
+.ant-layout .ant-layout-sider-trigger {
+  background: var(--secondary);
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+  background: var(--primary);
+}
